@@ -76,7 +76,8 @@ function getQuery() {
 
 <button id="J_btn" class="btn btn-default">支付</button>
 <script>
-  var aa = "service=mobile.securitypay.pay&partner=2088911201740274&sign_type=RSA&sign=ZvYPVCEPbT036QnUEatfFJCrO1bKTqvpMSVi3CKYUUEqZsfbYYt6TvkCLhI%2Bn1MZOlMtCuVYlffNCaUad%2B%2FdzsRyswvdSrAOWQvTvHscewFrC7AMZW1pqBKeaIPFFxE%2B1U%2BeASURsh%2B9dcCxEDY47RRRZhx9I25nez7pvIPh1rg%3D&notify_url=https://paynotify.pinduoduo.com/notify/6&out_trade_no=XP2222052219200322239192006182&subject=商户单号XP2222052219200322239192006182&payment_type=1&seller_id=pddzhifubao@yiran.com&total_fee=6.96&body=商户单号XP2222052219200322239192006182&goods_type=1&_input_charset=utf-8"
+  var aa = window.location.search.replace('?', '');
+  console.log(url);
   ap.tradePay({ orderStr: aa});
 </script>
 
